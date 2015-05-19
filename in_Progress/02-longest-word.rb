@@ -7,6 +7,10 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+	word = sentence.split
+	
+	result = 
+	puts word[0]
 end
 
 # These are tests to check that your code is working. After writing
