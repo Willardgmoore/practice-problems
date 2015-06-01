@@ -9,16 +9,16 @@ def nearby_az(string)
 
   idx = 0
   while idx < string.length
-puts "test"
+#puts "test"
 
-    if string[idx] == 'z'
-      puts "#{string[idx]} #{idx}"
+    if string[idx] == 'z' && idx >= 0
+ #     puts "#{string[idx]} #{idx}"
 
       idx1 = (idx - 3)
       while idx1 < idx
         #          	puts "#{idx1} = #{idx} - 3"
-        if string[idx1] == 'a'
-          puts "#{string[idx1]} #{idx1}"
+        if string[idx1] == 'a' && idx1 >= 0
+#          puts "#{string[idx1]} #{idx1}"
           return true  		
         end
 
