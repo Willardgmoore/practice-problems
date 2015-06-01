@@ -5,7 +5,39 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+  #	return true if "z" is within 3 after "a"
+
+  idx = 0
+  while idx < string.length
+puts "test"
+
+    if string[idx] == 'z'
+      puts "#{string[idx]} #{idx}"
+
+      idx1 = (idx - 3)
+      while idx1 < idx
+        #          	puts "#{idx1} = #{idx} - 3"
+        if string[idx1] == 'a'
+          puts "#{string[idx1]} #{idx1}"
+          return true  		
+        end
+
+        idx1 += 1
+      end
+
+    end
+    idx += 1
+ 
+  end
+  
+  return false
 end
+
+
+#find "a"
+#is_z loop return true
+#else false
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
