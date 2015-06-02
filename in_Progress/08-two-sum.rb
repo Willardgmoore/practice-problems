@@ -5,14 +5,33 @@
 # Difficulty: medium.
 
 def two_sum(nums)
+
+  idx = 0
+  while idx < nums.length
+
+    idx1 = idx + 1
+    while idx1 < nums.length
+
+      if nums[idx] + nums[idx1] == 0
+       return [idx, idx1]
+
+      end
+
+      idx1 += 1
+    end
+
+    idx += 1
+  end
+
+return nil
 end
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
 puts(
-  'two_sum([1, 3, 5, -3]) == [1, 3]: ' + (two_sum([1, 3, 5, -3]) == [1, 3]).to_s
+'two_sum([1, 3, 5, -3]) == [1, 3]: ' + (two_sum([1, 3, 5, -3]) == [1, 3]).to_s
 )
 puts(
-  'two_sum([1, 3, 5]) == nil: ' + (two_sum([1, 3, 5]) == nil).to_s
+'two_sum([1, 3, 5]) == nil: ' + (two_sum([1, 3, 5]) == nil).to_s
 )
